@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+
 /* Reset */
 * {
   margin: 0;
@@ -17,22 +21,38 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 15px 30px;
+  padding: 10px 30px;
   background: #111;
   color: #fff;
-
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+  font-size: 1.1em;
+  gap: 20px; /* space between logo, nav-links, and hamburger */
 }
 
+
 .logo {
-  font-family: 'Playfair Display', serif;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.8em;
   color: #d4af37;
 }
+.logo p {
+  font-size: 13px;
+  margin-top: 2px;
+  color: #fff;
+  text-align: center;   /* centers text horizontally */
+  display: block;       /* default, but ensures it's treated as a block */
+}
+
 
 .nav-links {
   list-style: none;
@@ -85,33 +105,40 @@ body, html {
 }
 
 /* Hero */
-.hero {
-  height: 100vh;
-  background: url('../images/hero.webp') no-repeat center center;
-  background-size: cover;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  color: #000;
-  padding: 20px;
+.hero { height: 100vh; background: url('../images/hero.webp') no-repeat center center; 
+  background-size: cover; 
+  display: flex; 
+  justify-content: flex-start; /* push content to the left */ 
+  align-items: center; /* keep it vertically centered */ 
+  text-align: left; /* align text left */ 
+  color: #000; 
+  padding: 40px 60px; /* add some left padding */ 
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+} 
+  
+.hero-text { 
+  max-width: 600px; /* optional: control text width */ 
 }
 
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   margin-bottom: 10px;
-  text-align: left;
+
 }
 
 .hero-text p {
   font-size: 1.2em;
   margin-bottom: 20px;
-  text-align: left;
+ 
 }
 .hero-text{
   text-align: left;
+   justify-content: left;
+  align-items:left;
+
+
 }
 
 .btn {
