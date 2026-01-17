@@ -123,7 +123,8 @@ body, html {
   text-align: left; /* align text left */ 
   color: #000; 
   padding: 40px 60px; /* add some left padding */ 
-  font-family: "Great Vibes", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 } 
@@ -136,21 +137,34 @@ body, html {
 .hero-text h1 {
   font-size: 3.5em;
   margin-bottom: 10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
 .hero-text p {
   font-size: 1.2em;
   margin-bottom: 20px;
- 
+      font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 .hero-text{
   text-align: left;
    justify-content: left;
   align-items:left;
-
-
 }
+.hero-text {
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.31); /* semi-transparent */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 60px 35px;
+  border-radius: 12px;
+}
+
 
 
 .btn {
